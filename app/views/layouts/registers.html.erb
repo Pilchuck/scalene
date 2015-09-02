@@ -5,12 +5,31 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!--5grid--><script src="javascripts/viewport.js"></script><!--[if lt IE 9]>
    <script src="javascripts/ie.js"></script><![endif]-->
   <!--5grid--><script src="javascripts/viewport.js"></script><!--[if lt IE 9]>
 <script src="javascripts/ie.js"></script><![endif]-->
   <link rel="stylesheet" href="stylesheets/responsive.css" /><!--/5grid-->
   <link rel="stylesheet" href="stylesheets/style.css" />
+
+  <script>
+      $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                      $('html,body').animate({
+                          scrollTop: target.offset().top
+                      }, 1000);
+                      return false;
+                  }
+              }
+          });
+      });
+  </script>
 
 </head>
 <body>
@@ -28,15 +47,6 @@
       </a>
       </h1>
 
-      <!-- Nav -->
-      <nav>
-        <a href="index.html">Homepage</a>
-        <a href="threecolumn.html">Who We Are</a>
-        <a href="twocolumn1.html">What We Do</a>
-        <a href="twocolumn2.html">Products</a>
-        <a href="onecolumn.html">Contact Us</a>
-      </nav>
-
     </div>
   </header>
   <div id="banner">
@@ -46,15 +56,14 @@
         <!-- Banner Copy -->
         <p>Hey dads, <br>
           Is diaper duty affecting your social life? </p>
-        <a href="#" class="button-big">YES IT IS</a>
+        <a href="#signup_box" class="button-big">YES IT IS</a>
 
       </div>
       <div class="6u">
 
         <!-- Banner Image -->
-        <a href="#" class="bordered-feature-image"><img src="" alt="" />
+        <a href="#" class="bordered-feature-image">
           <img src="images/shutterstock_127942103.jpg" width="568" height="191" alt=""/></a>
-
       </div>
       <div class="5grid-clear"></div>
     </div>
@@ -83,7 +92,7 @@
 
         <!-- Feature #2 -->
         <section>
-          <a href="#" class="bordered-feature-image"><img src="" /><img src="images/picture5.png" width="262" height="110" alt=""/></a>
+          <a href="#" class="bordered-feature-image"><img src="images/picture5.png" width="262" height="110" alt=""/></a>
           <h2>Outhouses don't have changing tables</h2>
           <p>
             <strong>Blog:</strong> As an avid hiker I wanted to share the outdoors with my newborn. But, with a diaper

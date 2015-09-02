@@ -15,7 +15,7 @@
 
 		body
 		{
-			background: #D4D9DD url('assets/bg03.jpg');
+			background: #D4D9DD url('../images/bg03.jpg');
 		}
 
 		body, input, textarea, select
@@ -142,7 +142,7 @@
 			{
 				padding: 0.7em 0 0.7em 45px;
 				font-size: 1.2em;
-				background: url('assets/icon-checkmark.png') 0px 1.05em no-repeat;
+				background: url('../images/icon-checkmark.png') 0px 1.05em no-repeat;
 			}
 			
 			.check-list li:first-child
@@ -185,7 +185,7 @@
 		.bordered-feature-image
 		{
 			display: block;
-			background: #fff url('assets/bg04.png');
+			background: #fff url('../images/bg04.png');
 			padding: 10px;
 			box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.15);
 			margin: 0 0 1.5em 0;
@@ -244,7 +244,7 @@
 
 			#header-wrapper
 			{
-				background: #3B4346 url('assets/bg01.jpg');
+				background: #3B4346 url('../images/bg01.jpg');
 				border-bottom: solid 1px #272d30;
 				box-shadow: inset 0px -1px 0px 0px #51575a;
 			}
@@ -256,14 +256,14 @@
 			
 			#features-wrapper
 			{
-				background: #353D40 url('assets/bg02.jpg');
+				background: #353D40 url('../images/bg02.jpg');
 				border-bottom: solid 1px #272e31;
 				padding: 45px 0 45px 0;
 			}
 			
 			#content-wrapper
 			{
-				background: #f7f7f7 url('assets/bg04.png');
+				background: #f7f7f7 url('../images/bg04.png');
 				border-top: solid 1px #fff;
 				padding: 45px 0 45px 0;
 			}
@@ -601,7 +601,7 @@
 
 			#header-wrapper
 			{
-				background: #3B4346 url('assets/bg01.jpg') top center;
+				background: #3B4346 url('../images/bg01.jpg') top center;
 				border-bottom: solid 1px #272d30;
 				box-shadow: inset 0px -1px 0px 0px #51575a;
 				padding: 15px;
@@ -616,13 +616,13 @@
 
 			#features-wrapper
 			{
-				background: #353D40 url('assets/bg02.jpg');
+				background: #353D40 url('../images/bg02.jpg');
 				padding: 15px 15px 30px 15px;
 			}
 			
 			#content-wrapper
 			{
-				background: #f7f7f7 url('assets/bg04.png');
+				background: #f7f7f7 url('../images/bg04.png');
 				padding: 5px;
 			}
 			

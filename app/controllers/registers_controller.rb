@@ -1,4 +1,5 @@
 class RegistersController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_register, only: [:show, :edit, :update, :destroy]
   after_action :check_fibo
   layout :resolve_layout
@@ -6,6 +7,10 @@ class RegistersController < ApplicationController
   def fib(n)
     return n if (0..1).include? n
     fib(n-1) + fib(n-2) if n > 1
+  end
+
+  def thankyou
+    
   end
 
   # GET /registers
@@ -35,11 +40,9 @@ class RegistersController < ApplicationController
 
     respond_to do |format|
       if @register.save
-        format.html { redirect_to @register, notice: 'Register was successfully created.' }
-        format.json { render :show, status: :created, location: @register }
+        format.html { redirect_to :action => "thankyou" }
       else
         format.html { render :new }
-        format.json { render json: @register.errors, status: :unprocessable_entity }
       end
     end
   end

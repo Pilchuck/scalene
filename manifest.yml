@@ -1,6 +1,6 @@
 ---
 applications:
-- name: hp-helion-ruby-signup2
+- name: scalene
   memory: 512M
   instances: 1
   command: bundle exec rails s -p $PORT
