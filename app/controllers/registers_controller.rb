@@ -9,6 +9,11 @@ class RegistersController < ApplicationController
     fib(n-1) + fib(n-2) if n > 1
   end
 
+  def info
+    @vcap = "VCAP details not available"
+    @vcap = JSON.parse(ENV['VCAP_SERVICES']) if ENV['VCAP_SERVICES'].present?
+  end
+
   def thankyou
     
   end
